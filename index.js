@@ -20,13 +20,13 @@ function drawRegionsMap(stateCases) {
     var options = {
         region: 'BR',
         resolution: 'provinces',
-        width: 1200,
-        height: 900,
+        width: '100%',
+        height: 800,
         colorAxis: {
             colors: ['#acb2b9', '#2f3f4f']
         }
     };
 
-    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+    var chart = new google.visualization.GeoChart(document.getElementById('regions'));
     chart.draw(data, options);
 }
