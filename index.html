@@ -21,13 +21,12 @@
                     <p>COVID-19 Confirmed Cases or Casualities in Brazil. Data from the Brazil IO API.</p>
                     <p>This page will save data from the requests in your browser's local storage for a better performance.</p>
 
-                    <button type="button" class="btn btn-secondary">Show Confirmed Cases</button>
-                    <button type="button" class="btn btn-secondary">Show Casualities</button>
+                    <button type="button" class="btn btn-secondary" onclick="showConfirmed()">Show Confirmed Cases</button>
+                    <button type="button" class="btn btn-secondary" onclick="showCasualities()">Show Casualities</button>
 
                     <br><br><br><br><br><br>
 
-                    <p id="confirmed_p" class="fst-italic">You are currently viewing the number of confirmed cases.</p>
-                    <p id="casualities_p" class="fst-italic">You are currently viewing the number of confirmed casualities.</p>
+                    <h5 id="viewing" class="fst-italic"></h5>
                 </div>
                 <div class="col-md-9">
                     <div id="regions"></div>
