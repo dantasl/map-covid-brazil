@@ -14,7 +14,7 @@ function showCasualities() {
 
 function fetchData() {
     fetch('https://api.brasil.io/v1/dataset/covid19/caso/data/?place_type=state', {
-        headers: {"Authorization": "Token 8e91da2bd4acc0021df573785ea3f7893c84c7d1"}
+        headers: {"Authorization": "Token {place_your_API_token_here}"}
     })
     .then(response => response.json())
     .then(function(response) {
