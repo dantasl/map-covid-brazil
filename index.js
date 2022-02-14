@@ -1,14 +1,14 @@
 google.charts.load('current', {'packages':['geochart']});
 
 function showConfirmed() {
-    getDataThenDrawMap();
     sessionStorage.setItem('type', 'confirmed');
+    getDataThenDrawMap();
     document.getElementById('viewing').innerText = 'You are currently viewing the number of Confirmed Cases.';
 }
 
 function showCasualities() {
-    getDataThenDrawMap();
     sessionStorage.setItem('type', 'deaths');
+    getDataThenDrawMap();
     document.getElementById('viewing').innerText = 'You are currently viewing the number of Casualities.';
 }
 
